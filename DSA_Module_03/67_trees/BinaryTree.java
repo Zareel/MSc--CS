@@ -15,6 +15,7 @@ public class BinaryTree{
         root = insertRec(root, data);
     }
 
+    
     public Node insertRec(Node root ,int data){
         if(root == null) 
             root = new Node(data);
