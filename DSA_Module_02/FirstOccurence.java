@@ -1,7 +1,7 @@
 public class FirstOccurence {
     public static void main(String[] args) {
-        int[] arr = {1,2,4,4,4,5,6,6,6,7,8,8,8,8,9,9,9};
-        int k = 8;
+        int[] arr = {1,2,4,4,4,5,5,6,6,6,7,8,8,8,8,9,9,9};
+        int k = 5;
         System.out.println(indexOfFirstOccurence(arr, k));
 
     }

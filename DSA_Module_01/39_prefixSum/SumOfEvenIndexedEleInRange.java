@@ -1,10 +1,11 @@
 public class SumOfEvenIndexedEleInRange {
 public static void main(String[] args) {
-        int[] A = {2, 8, 3, 9, 15};
+        int[] A = {2,4,3,7,9,8,6,3,4,9};
     int[][] Q = {
-        {1,4},
-        {0,2},
-        {2,3},
+       {4,8},
+        {3,9},
+        {2,7},
+        {0,4},
     };
     printArr(findSum(A, Q));
 }
@@ -18,9 +19,11 @@ public static int[] findSum(int[] A, int[][] Q){
 
         for (int i = 1; i < n; i++) {
             if (i % 2 == 0) {
-                pSum[i] = pSum[i - 1] + A[i];
+                      pSum[i] = pSum[i - 1] + A[i];
+               
             } else {
-                pSum[i] = pSum[i - 1];
+          
+                   pSum[i] = pSum[i - 1];
             }
         }
 
@@ -44,7 +47,7 @@ public static int[] findSum(int[] A, int[][] Q){
       public static void printArr(int[] A){
         int n = A.length;
         for(int i= 0;i < n; i++){
-            System.out.println(A[i]);
+            System.out.print(A[i] + " ");
         }
     }
 
